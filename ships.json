@@ -2,15 +2,15 @@
     "ships": [
         {
             "name": "Drake",
-            "icon": "AL_Secretary/Images/DrakeIcon.png"
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/DrakeIcon.png"
         },
         {
             "name": "Dunkerque",
-            "icon": "AL_Secretary/Images/DunkerqueIcon.png"
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/DunkerqueIcon.png"
         },
         {
             "name": "Monarch",
-            "icon": "AL_Secretary/Images/MonarchIcon.png"
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/MonarchIcon.png"
         }
     ]
 }
