@@ -10,7 +10,7 @@ let closeButton = document.getElementById("close-modal");
 dock.onclick = function() 
 {
     modal.style.display = "block";
-    getShipIcons();
+    updateDock();
 }
 
 closeButton.onclick = function()
@@ -58,7 +58,8 @@ function Ship(name, image)
 }
 
 const iconInModal = [];
-const shipArr = [];
+const dockArr = [];
+let dockHasChanged;
 
 async function fetchArr() {
     try {
@@ -80,8 +81,10 @@ async function test()
 
     for(let i = 0; i < arr.ships.length; i++)
     {
-        iconInModal.push(arr.ships[i]);
+        dockArr.push(arr.ships[i]);
     }
+    dockHasChanged = false;
+    getShipIcons();
 }
 test();
 
@@ -113,10 +116,23 @@ for(let x = 0; x < shipsObj.ships.length; x++)
 
 function getShipIcons()
 {
-    for(let i = 0; i < iconInModal.length; i++)
+    for(let i = 0; i < dockArr.length; i++)
     {
-        let image = `<image src='${iconInModal[i].icon}' alt='ship'>`;
+        let image = `<image class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='ship'>`;
         console.log(image);
         document.getElementById("shipIcons").innerHTML += image;
+    }
+}
+
+function updateDock()
+{
+    if(dockHasChanged)
+    {
+        let dockImageElements = document.getElementsByClassName('ships-in-modal');
+        for(let i = 0; i < dockImageElements.length; i++)
+        {
+            dockImageElements[i].remove();
+        }
+        getShipIcons();
     }
 }
