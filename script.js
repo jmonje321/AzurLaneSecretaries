@@ -60,7 +60,7 @@ function Ship(name, image)
 const iconInModal = [];
 const shipArr = [];
 
-fetch('https://github.com/jmonje321/AzurLaneSecretaries/blob/master/ships.json')
+fetch('ships.json')
   .then(response => response.json())
   .then(data => console.log(data));
 
