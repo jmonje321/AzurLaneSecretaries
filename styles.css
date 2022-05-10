@@ -78,7 +78,7 @@ footer {
     text-align: center;
 }
 
-image.ultra {
+img.ultra {
     border-style: solid;
     border-radius: 10px;
     border-width: 4px;
@@ -87,7 +87,7 @@ image.ultra {
     margin-right: 1px;
 }
 
-image.super {
+img.super {
     border-style: solid;
     border-radius: 10px;
     border-width: 4px;
@@ -96,7 +96,7 @@ image.super {
     margin-right: 1px;
 }
 
-image.elite {
+img.elite {
     border-style: solid;
     border-radius: 10px;
     border-width: 4px;

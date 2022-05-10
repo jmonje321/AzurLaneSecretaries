@@ -118,7 +118,7 @@ function getShipIcons()
 {
     for(let i = 0; i < dockArr.length; i++)
     {
-        let image = `<image class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='ship'>`;
+        let image = `<img class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='ship'>`;
         console.log(image);
         document.getElementById("shipIcons").innerHTML += image;
     }
