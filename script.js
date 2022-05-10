@@ -1,8 +1,3 @@
-let ships = '{ "ships": [' +
-'{"name": "Drake", "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/DrakeIcon.png"},' +
-'{"name": "Dunkerque", "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/DunkerqueIcon.png"},' +
-'{"name": "Monarch", "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/MonarchIcon.png"}]}';
-
 let modal = document.getElementById("dock-modal");
 let dock = document.getElementById("dock");
 let closeButton = document.getElementById("close-modal");
@@ -25,6 +20,11 @@ window.addEventListener("click", function(event)
         modal.style.display = "none";
     }
 })
+
+function clickedShipIcon(shipID)
+{
+    console.log(shipID);
+}
 
 function timeUntilReset()
 {
@@ -49,12 +49,6 @@ function addExtraZero(time)
         return "0" + time;
     }
     return time;
-}
-
-function Ship(name, image)
-{
-    this.name = name;
-    this.image = image;
 }
 
 const iconInModal = [];
@@ -88,37 +82,11 @@ async function test()
 }
 test();
 
-/*
-var obj;
-
-fetch('https://jmonje321.github.io/AzurLaneSecretaries/ships.json')
-  .then(res => res.json())
-  .then(data => obj = data)
-  .then(() => console.log(obj))
-
-
-fetch('https://jmonje321.github.io/AzurLaneSecretaries/ships.json')
-  .then(response => response.json())
-  .then(result => {
-    jsonFileData = result;
-  });
-  //.then(data => console.log(data));
-
-
-let shipsObj = JSON.parse(ships);
-console.log(shipsObj.ships[0].icon);
-for(let x = 0; x < shipsObj.ships.length; x++)
-{
-    iconInModal.push(shipsObj.ships[x]);
-}
-*/
-//console.log(obj);
-
 function getShipIcons()
 {
     for(let i = 0; i < dockArr.length; i++)
     {
-        let image = `<img class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='ship'>`;
+        let image = `<img class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='${dockArr[i].name}' onclick='clickedShipIcon(this.alt)'>`;
         console.log(image);
         document.getElementById("shipIcons").innerHTML += image;
     }

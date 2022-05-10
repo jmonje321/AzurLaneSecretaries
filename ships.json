@@ -2,17 +2,17 @@
     "ships": [
         {
             "name": "Drake",
-            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/DrakeIcon.png",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DrakeIcon.png",
             "rarity": "ultra"
         },
         {
             "name": "Dunkerque",
-            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/DunkerqueIcon.png",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DunkerqueIcon.png",
             "rarity": "elite"
         },
         {
             "name": "Monarch",
-            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/MonarchIcon.png",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/MonarchIcon.png",
             "rarity": "super"
         }
     ]

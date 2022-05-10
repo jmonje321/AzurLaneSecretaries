@@ -80,29 +80,26 @@ footer {
 
 img.ultra {
     border-style: solid;
-    border-radius: 10px;
     border-width: 4px;
-    border-color: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%);
+    border-image: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%) 1;  
     display: inline-block;
-    margin-right: 1px;
+    margin: 5px;
 }
 
 img.super {
     border-style: solid;
-    border-radius: 10px;
     border-width: 4px;
     border-color: #eeee99;
     display: inline-block;
-    margin-right: 1px;
+    margin: 5px;
 }
 
 img.elite {
     border-style: solid;
-    border-radius: 10px;
     border-width: 4px;
     border-color: #c4adff;
     display: inline-block;
-    margin-right: 1px;
+    margin: 5px;
 }
 
 .modal {
