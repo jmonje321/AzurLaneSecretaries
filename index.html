@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AL Secretary Randomizer</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body onload="timeUntilReset()">
+        <h1>Azur Lane Secretary Randomizer</h1>
+        <hr>
+        <h2>Time Until Reset: <span id="reset-time"></span></h2>
+        <br>
+        <div class="options">
+            <label for="secretary-amount">How many secretary slots do you have?:</label>
+                <select id="secretary-amount" name="secretary-amount">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            
+            <button id="dock">Choose Ships</button>
+            <div id="dock-modal" class="modal">
+                <div class="modal-content">
+                    <button id="close-modal">Close</button>
+                    <div id="shipIcons"></div>
+                    <!--<input type="image" src="https://azurlane.netojuu.com/w/images/thumb/a/a3/MonarchIcon.png/90px-MonarchIcon.png" alt="Monarch Icon">-->
+                </div>
+            </div>
+        </div>
+        <div class="secretaries">
+            <figure class="ultra-rare">
+                <img src="https://azurlane.netojuu.com/w/images/6/6a/Friedrich_der_Gro%C3%9FeShipyardIcon.png" alt="Friedrich der Große" width="172.8">
+                <figcaption>Friedrich der Große</figcaption>
+            </figure>
+            <figure class="super-rare">
+                <img src="https://azurlane.netojuu.com/w/images/5/5c/Graf_ZeppelinShipyardIcon.png" alt="Graf Zeppelin" width="172.8">
+                <figcaption>Graf Zeppelin</figcaption>
+            </figure>
+            <figure class="rare">
+                <img src="https://azurlane.netojuu.com/w/images/4/40/HonoluluShipyardIcon.png" alt="Honolulu" width="172.8">
+                <figcaption>Honolulu</figcaption>
+            </figure>
+            <figure class="super-rare">
+                <img src="https://azurlane.netojuu.com/w/images/e/ee/AkagiShipyardIcon.png" alt="Akagi" width="172.8">
+                <figcaption>Akagi</figcaption>
+            </figure>
+        </div>
+        <footer>
+            <p>If you notice any bugs or have any questions,<br>contact me on Discord at <span style="color:purple">Fenix#1613</span>
+            or file an issue on <a href="https://github.com/jmonje321/AL_Secretary" target="_blank">GitHub</a>.</p>
+        </footer>
+        <script src="require.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

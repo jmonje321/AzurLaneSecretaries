@@ -1,0 +1,100 @@
+body {
+    background-color: lightgray;
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+div.secretaries {
+    display: flex;
+    justify-content: center;
+}
+
+div.options{
+    text-align: center;
+    justify-content: center;
+}
+
+#dock {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+figure {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #444444;
+    display: inline-block;
+    margin-right: 1px;
+    /*width: 192px;*/
+    width: 172.8px;
+    height: 252px;
+}
+
+figure img {
+    vertical-align: middle;
+}
+
+figcaption {
+    color: white;
+    background-color: #444444;
+}
+
+figure.ultra-rare {
+    background: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%);
+}
+
+figure.super-rare {
+    /*border-color: #eeee99;*/
+    background: #eeee99;
+}
+
+figure.elite {
+    /*border-color: #c4adff;*/
+    background: #c4adff;
+}
+
+figure.rare {
+    /*border-color: #9fe8ff;*/
+    background: #9fe8ff;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 100px;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+}
+
+.modal-content {
+    background: whitesmoke;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+}
