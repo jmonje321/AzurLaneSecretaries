@@ -3,17 +3,38 @@
         {
             "name": "Drake",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DrakeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/DrakeShipyardIcon.png",
             "rarity": "ultra"
         },
         {
-            "name": "Dunkerque",
-            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DunkerqueIcon.png",
-            "rarity": "elite"
+            "name": "Friedrich der Große",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Friedrich_der_GroßeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Friedrich_der_GroßeShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Akagi",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AkagiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/AkagiShipyardIcon.png",
+            "rarity": "super"
         },
         {
             "name": "Monarch",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/MonarchIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/MonarchShipyardIcon.png",
             "rarity": "super"
+        },
+        {
+            "name": "Dunkerque",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DunkerqueIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/DunkerqueShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Honolulu",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HonoluluIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/HonoluluShipyardIcon.png",
+            "rarity": "rare"
         }
     ]
 }
