@@ -60,6 +60,10 @@ function Ship(name, image)
 const iconInModal = [];
 const shipArr = [];
 
+fetch('https://github.com/jmonje321/AzurLaneSecretaries/blob/master/ships.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
 let shipsObj = JSON.parse(ships);
 console.log(shipsObj.ships[0].icon);
 for(let x = 0; x < shipsObj.ships.length; x++)
