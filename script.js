@@ -71,7 +71,7 @@ async function fetchArr() {
 async function test()
 {
     const arr = await fetchArr();
-    console.log(arr.ships[0].icon);
+    console.log(arr.ships);
 
     for(let i = 0; i < arr.ships.length; i++)
     {
@@ -86,7 +86,7 @@ function getShipIcons()
 {
     for(let i = 0; i < dockArr.length; i++)
     {
-        let image = `<img class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='${dockArr[i].name}' onclick='clickedShipIcon(this.alt)'>`;
+        let image = `<img class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='${dockArr[i].name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
         console.log(image);
         document.getElementById("shipIcons").innerHTML += image;
     }
