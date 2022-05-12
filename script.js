@@ -47,6 +47,7 @@ function clickedShipIcon(shipID)
         selectedShips.push(shipID);
         updateRotation(getShipObject(shipID), true);
     }
+    localStorage.setItem("rotation", JSON.stringify(selectedShips));
 }
 
 /**
@@ -122,6 +123,11 @@ async function addToDock()
     for(let i = 0; i < arr.ships.length; i++)
     {
         dockArr.push(arr.ships[i]);
+    }
+
+    if("rotation" in localStorage)
+    {
+        selectedShips = JSON.parse(localStorage.getItem("rotation"));
     }
     getShipIcons();
 }
