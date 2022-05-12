@@ -5,7 +5,6 @@ let closeButton = document.getElementById("close-modal");
 dock.onclick = function() 
 {
     modal.style.display = "block";
-    updateDock();
 }
 
 closeButton.onclick = function()
@@ -21,10 +20,17 @@ window.addEventListener("click", function(event)
     }
 })
 
+/**
+ * Determines whether an icon from the dock has been selected
+ * or unselected. If selected, then adds the ship to the selectedShips
+ * array. If unselected, then removes said ship from array. Updates the
+ * icons in rotation by calling updateRotation() each time.
+ * @param {String} shipID - name of ship that has been clicked
+ */
 function clickedShipIcon(shipID)
 {
     console.log(shipID);
-    let test1 = document.getElementById(shipID);
+    let test1 = document.getElementById(`${shipID}-dock`);
     if(test1.hasAttribute("style") && test1.getAttribute("style") === "filter: brightness(0.25);")
     {
         test1.style.filter = "brightness(1)";
@@ -33,15 +39,20 @@ function clickedShipIcon(shipID)
         {
             selectedShips.splice(index, 1);
         }
+        updateRotation(shipID, false);
     }
     else
     {
         test1.style.filter = "brightness(0.25)";
         selectedShips.push(shipID);
+        updateRotation(getShipObject(shipID), true);
     }
-    //document.getElementById(shipID).style.filter = "brightness(0.5)";
 }
 
+/**
+ * Calculates time until weekly reset in Azur Lane and injects
+ * information into "reset-time" div id element.
+ */
 function timeUntilReset()
 {
     const d = new Date();
@@ -65,6 +76,12 @@ function timeUntilReset()
     */
 }
 
+/**
+ * Helper function for timeUntilReset(). Gets minutes/seconds and adds "0" to
+ * tens digit when needed.
+ * @param {number} time - number in minutes/seconds
+ * @returns {number}
+ */
 function addExtraZero(time)
 {
     if(time < 10)
@@ -76,9 +93,11 @@ function addExtraZero(time)
 
 const selectedShips = [];
 const dockArr = [];
-let dockHasChanged;
 
-async function fetchArr() {
+/**
+ * Fetches the ships.json from the repo.
+ */
+async function fetchJSON() {
     try {
         const response = await fetch('https://jmonje321.github.io/AzurLaneSecretaries/ships.json', {
             method: 'GET',
@@ -91,39 +110,92 @@ async function fetchArr() {
     }
 }
 
-async function test()
+/**
+ * Waits for fetchJSON's response and uses that information
+ * to construct the dockArr array of ship objects.
+ */
+async function addToDock()
 {
-    const arr = await fetchArr();
+    const arr = await fetchJSON();
     console.log(arr.ships);
 
     for(let i = 0; i < arr.ships.length; i++)
     {
         dockArr.push(arr.ships[i]);
     }
-    dockHasChanged = false;
     getShipIcons();
 }
-test();
+addToDock();
 
+/**
+ * Function is called only when the page is first opened. Adds the icons
+ * of the ships in selectedShips array to the "rotationShips" div id and
+ * ships in dockArr array to the "shipIcons" div id.
+ */
 function getShipIcons()
+{
+    for(let j = 0; j < selectedShips.length; j++)
+    {
+        addImage(getShipObject(selectedShips[j]), "rotationShips", "rotation");
+    }
+    for(let i = 0; i < dockArr.length; i++)
+    {
+        addImage(dockArr[i], "shipIcons", "dock");
+    }
+}
+
+/**
+ * Helper function to add ship icon to html of page.
+ * @param {object} ship - Ship object containing info such as name, icon url, etc.
+ * @param {String} id - Tag ID of the element where the image will be injected.
+ * @param {string} where - String saying where the element will be used.      
+ */ 
+function addImage(ship, id, where)
+{
+    let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' alt='${ship.name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
+    //console.log(image);
+    document.getElementById(id).innerHTML += image;
+}
+
+/**
+ * When a ship is added or removed from the selectedShips array, this
+ * function is called to remove/add the image from the page to reflect
+ * the change.
+ */
+function updateRotation(ship, added)
+{
+    if(added)
+    {
+        addImage(ship, "rotationShips", "rotation");
+    }
+    else
+    {
+        document.getElementById(`${ship}-rotation`).remove();
+    }
+}
+
+/**
+ * Given the ship name, the function will return the object from dockArr that
+ * refers to the ship with the same name.
+ * @param {String} shipName - Name of the ship
+ * @returns {object}
+ */
+function getShipObject(shipName)
 {
     for(let i = 0; i < dockArr.length; i++)
     {
-        let image = `<img class='${dockArr[i].rarity}' id='${dockArr[i].name}' src='${dockArr[i].icon}' alt='${dockArr[i].name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
-        console.log(image);
-        document.getElementById("shipIcons").innerHTML += image;
+        if(dockArr[i].name === shipName)
+        {
+            return dockArr[i];
+        }
     }
 }
 
-function updateDock()
-{
-    if(dockHasChanged)
-    {
-        let dockImageElements = document.getElementsByClassName('ships-in-modal');
-        for(let i = 0; i < dockImageElements.length; i++)
-        {
-            dockImageElements[i].remove();
-        }
-        getShipIcons();
-    }
-}
+/**
+ * TODO: 
+ * [] Clicking icon in rotation may be a bug/feature? Change as see fit.
+ * [] Current secretaries shoud be taken from ships in rotation.
+ * [] Add array for ships that are out of rotation.
+ * [] Make sure ships are taken randomly from selectedShips[].
+ * [] Current secretaries should be rotated during weekly reset.
+ */
