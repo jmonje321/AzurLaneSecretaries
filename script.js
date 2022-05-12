@@ -92,7 +92,7 @@ function addExtraZero(time)
     return time;
 }
 
-const selectedShips = [];
+let selectedShips;
 const dockArr = [];
 
 /**
@@ -129,6 +129,10 @@ async function addToDock()
     {
         selectedShips = JSON.parse(localStorage.getItem("rotation"));
     }
+    else
+    {
+        selectedShips = [];
+    }
     getShipIcons();
 }
 addToDock();
@@ -159,8 +163,13 @@ function getShipIcons()
 function addImage(ship, id, where)
 {
     let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' alt='${ship.name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
-    //console.log(image);
     document.getElementById(id).innerHTML += image;
+    
+    if(where === "dock" && selectedShips.includes(ship.name))
+    {
+        
+        document.getElementById(`${ship.name}-dock`).style.filter = "brightness(0.25)";
+    }
 }
 
 /**
