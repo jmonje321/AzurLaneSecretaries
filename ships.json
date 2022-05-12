@@ -19,6 +19,12 @@
             "rarity": "super"
         },
         {
+            "name": "August von Parseval",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/August_von_ParsevalIcon.png",
+            "shipyard":"https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/August_von_ParsevalShipyardIcon.png",
+            "rarity": "super"
+        },
+        {
             "name": "Monarch",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/MonarchIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/MonarchShipyardIcon.png",
@@ -28,6 +34,12 @@
             "name": "Dunkerque",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DunkerqueIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/DunkerqueShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "St. Louis",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/St._LouisIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/St._LouisShipyardIcon.png",
             "rarity": "elite"
         },
         {

@@ -18,7 +18,6 @@ div.secretaries {
 
 div.options{
     text-align: center;
-    justify-content: center;
 }
 
 #dock {
@@ -31,7 +30,7 @@ label {
     margin-right: 10px;
 }
 
-figure {
+div.secretaries figure {
     border-style: solid;
     border-radius: 10px;
     border-width: 4px;
@@ -43,13 +42,14 @@ figure {
     height: 252px;
 }
 
-figure img {
+div.secretaries figure img {
     vertical-align: middle;
 }
 
-figcaption {
+div.secretaries figcaption {
     color: white;
     background-color: #444444;
+    text-align: center;
 }
 
 figure.ultra-rare {
@@ -69,10 +69,6 @@ figure.elite {
 figure.rare {
     /*border-color: #9fe8ff;*/
     background: #9fe8ff;
-}
-
-figure figcaption {
-    text-align: center;
 }
 
 footer {

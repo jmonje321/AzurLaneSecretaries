@@ -24,6 +24,22 @@ window.addEventListener("click", function(event)
 function clickedShipIcon(shipID)
 {
     console.log(shipID);
+    let test1 = document.getElementById(shipID);
+    if(test1.hasAttribute("style") && test1.getAttribute("style") === "filter: brightness(0.25);")
+    {
+        test1.style.filter = "brightness(1)";
+        const index = selectedShips.indexOf(shipID);
+        if(index !== -1)
+        {
+            selectedShips.splice(index, 1);
+        }
+    }
+    else
+    {
+        test1.style.filter = "brightness(0.25)";
+        selectedShips.push(shipID);
+    }
+    //document.getElementById(shipID).style.filter = "brightness(0.5)";
 }
 
 function timeUntilReset()
@@ -40,6 +56,13 @@ function timeUntilReset()
     
     document.getElementById("reset-time").innerHTML = hour + ":" + addExtraZero(minutes) + ":" + addExtraZero(seconds);
     setTimeout(timeUntilReset, 1000);
+    /*
+    // For debugging
+    for(let i = 0; i < selectedShips.length; i++)
+    {
+        console.log(selectedShips[i]);
+    }
+    */
 }
 
 function addExtraZero(time)
@@ -51,7 +74,7 @@ function addExtraZero(time)
     return time;
 }
 
-const iconInModal = [];
+const selectedShips = [];
 const dockArr = [];
 let dockHasChanged;
 
@@ -86,7 +109,7 @@ function getShipIcons()
 {
     for(let i = 0; i < dockArr.length; i++)
     {
-        let image = `<img class='${dockArr[i].rarity}' src='${dockArr[i].icon}' alt='${dockArr[i].name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
+        let image = `<img class='${dockArr[i].rarity}' id='${dockArr[i].name}' src='${dockArr[i].icon}' alt='${dockArr[i].name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
         console.log(image);
         document.getElementById("shipIcons").innerHTML += image;
     }
