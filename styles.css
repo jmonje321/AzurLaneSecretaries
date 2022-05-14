@@ -52,11 +52,17 @@ div.secretaries figcaption {
     text-align: center;
 }
 
-figure.ultra-rare {
+#rotationShips,
+#nonrotationShips {
+    display: flex;
+    justify-content: center;;
+}
+
+figure.ultra {
     background: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%);
 }
 
-figure.super-rare {
+figure.super {
     /*border-color: #eeee99;*/
     background: #eeee99;
 }

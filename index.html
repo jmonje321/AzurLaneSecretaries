@@ -14,7 +14,7 @@
         <h3>Time Until Weekly Reset: <span id="reset-time"></span></h3>
         <div class="options">
             <label for="secretary-amount">How many secretary slots do you have?:</label>
-                <select id="secretary-amount" name="secretary-amount">
+                <select id="secretary-amount" name="secretary-amount" onchange="setSecretaryNum(this)">
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
@@ -36,39 +36,26 @@
                     <!--<input type="image" src="https://azurlane.netojuu.com/w/images/thumb/a/a3/MonarchIcon.png/90px-MonarchIcon.png" alt="Monarch Icon">-->
                 </div>
             </div>
+            <button id="randomize" onclick="getNextSecretaries()">Manually Randomize</button>
         </div>
 
         <h2>Current Secretaries</h2>
         <hr style="width:25%">
 
-        <div class="secretaries">
-            <figure class="ultra-rare">
-                <img src="https://azurlane.netojuu.com/w/images/6/6a/Friedrich_der_Gro%C3%9FeShipyardIcon.png" alt="Friedrich der Große" width="172.8">
-                <figcaption>Friedrich der Große</figcaption>
-            </figure>
-            <figure class="super-rare">
-                <img src="https://azurlane.netojuu.com/w/images/5/5c/Graf_ZeppelinShipyardIcon.png" alt="Graf Zeppelin" width="172.8">
-                <figcaption>Graf Zeppelin</figcaption>
-            </figure>
-            <figure class="rare">
-                <img src="https://azurlane.netojuu.com/w/images/4/40/HonoluluShipyardIcon.png" alt="Honolulu" width="172.8">
-                <figcaption>Honolulu</figcaption>
-            </figure>
-            <figure class="super-rare">
-                <img src="https://azurlane.netojuu.com/w/images/e/ee/AkagiShipyardIcon.png" alt="Akagi" width="172.8">
-                <figcaption>Akagi</figcaption>
-            </figure>
-        </div>
+        <div class="secretaries" id="secretaries"></div>
 
         <hr style="width:25%">
+
         <div>
-            <h2>Ships In Rotation:</h2>
+            <h2>Up Next:</h2>
             <div id="rotationShips"></div>
+            <h2>Already Chosen:</h2>
+            <div id="nonrotationShips"></div>
         </div>
 
         <footer>
             <p>If you notice any bugs or have any questions,<br>contact me on Discord at <span style="color:purple">Fenix#1613</span>
-            or file an issue on <a href="https://github.com/jmonje321/AL_Secretary" target="_blank">GitHub</a>.</p>
+            or file an issue on <a href="https://github.com/jmonje321/AzurLaneSecretaries" target="_blank">GitHub</a>.</p>
         </footer>
         <script src="script.js"></script>
     </body>

@@ -25,6 +25,12 @@
             "rarity": "super"
         },
         {
+            "name": "Graf Zeppelin",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Graf_ZeppelinIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Graf_ZeppelinShipyardIcon.png",
+            "rarity": "super"
+        },
+        {
             "name": "Monarch",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/MonarchIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/MonarchShipyardIcon.png",

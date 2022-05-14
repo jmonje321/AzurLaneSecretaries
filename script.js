@@ -20,6 +20,11 @@ window.addEventListener("click", function(event)
     }
 })
 
+function setSecretaryNum(object)
+{
+    localStorage.setItem("secretaryNum", object.options[object.selectedIndex].value);
+}
+
 /**
  * Determines whether an icon from the dock has been selected
  * or unselected. If selected, then adds the ship to the selectedShips
@@ -46,6 +51,16 @@ function clickedShipIcon(shipID)
         test1.style.filter = "brightness(0.25)";
         selectedShips.push(shipID);
         updateRotation(getShipObject(shipID), true);
+
+        /*
+        console.log(selectedShips.length)
+        console.log(parseInt(document.getElementById("secretary-amount").value))
+        // TEST
+        if(selectedShips.length === parseInt(document.getElementById("secretary-amount").value))
+        {
+            console.log("GOT HERE");
+            getNextSecretaries();
+        } */
     }
     localStorage.setItem("rotation", JSON.stringify(selectedShips));
 }
@@ -94,6 +109,8 @@ function addExtraZero(time)
 
 let selectedShips;
 const dockArr = [];
+let currentSecretaries;
+let alreadySelected;
 
 /**
  * Fetches the ships.json from the repo.
@@ -125,6 +142,11 @@ async function addToDock()
         dockArr.push(arr.ships[i]);
     }
 
+    if("secretaryNum" in localStorage)
+    {
+        document.getElementById("secretary-amount").value = localStorage.getItem("secretaryNum");
+    }
+
     if("rotation" in localStorage)
     {
         selectedShips = JSON.parse(localStorage.getItem("rotation"));
@@ -133,6 +155,26 @@ async function addToDock()
     {
         selectedShips = [];
     }
+
+    // Testing
+    if("secretaries" in localStorage)
+    {
+        currentSecretaries = JSON.parse(localStorage.getItem("secretaries"));
+    }
+    else
+    {
+        currentSecretaries = [];
+    }
+
+    if("outRotation" in localStorage)
+    {
+        alreadySelected = JSON.parse(localStorage.getItem("outRotation"));
+    }
+    else
+    {
+        alreadySelected = [];
+    }
+
     getShipIcons();
 }
 addToDock();
@@ -144,10 +186,25 @@ addToDock();
  */
 function getShipIcons()
 {
+    // Adds ships from currentSecretaries[] to Current Secretaries section.
+    let ship;
+    for(let k = 0; k < currentSecretaries.length; k++)
+    {
+        ship = getShipObject(currentSecretaries[k]);
+        let image = `<figure class='${ship.rarity}' id='${ship.name}-secretaries'><img src='${ship.shipyard}' alt='${ship.name}' width='172.8'><figcaption>${ship.name}</figcaption></figure>`;
+        document.getElementById("secretaries").innerHTML += image;
+    }
+    // Adds ships from selectedShips[] to rotation ships section.
     for(let j = 0; j < selectedShips.length; j++)
     {
         addImage(getShipObject(selectedShips[j]), "rotationShips", "rotation");
     }
+    // Adds ships from alreadySelected[] to Already Chosen section.
+    for(let x = 0; x < alreadySelected.length; x++)
+    {
+        addImage(getShipObject(alreadySelected[x]), "nonrotationShips", "nonrotation");
+    }
+    // Adds ships from dockArr[] to dock modal.
     for(let i = 0; i < dockArr.length; i++)
     {
         addImage(dockArr[i], "shipIcons", "dock");
@@ -162,14 +219,19 @@ function getShipIcons()
  */ 
 function addImage(ship, id, where)
 {
-    let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' alt='${ship.name}' width='90' onclick='clickedShipIcon(this.alt)'>`;
+    let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' alt='${ship.name}' width='90'>`;
     document.getElementById(id).innerHTML += image;
     
-    if(where === "dock" && selectedShips.includes(ship.name))
+    if(where === "dock")
     {
-        
-        document.getElementById(`${ship.name}-dock`).style.filter = "brightness(0.25)";
+        document.getElementById(`${ship.name}-dock`).setAttribute("onclick", `clickedShipIcon(document.getElementById('${ship.name}-dock').alt);`);
+
+        if(selectedShips.includes(ship.name))
+        {
+            document.getElementById(`${ship.name}-dock`).style.filter = "brightness(0.25)";
+        }
     }
+    
 }
 
 /**
@@ -206,11 +268,85 @@ function getShipObject(shipName)
     }
 }
 
+function addSecretaries(nextSecretariesArr)
+{
+    // Removes old secretaries and puts them in alreadySelected[]
+    for(let j = 0; j < currentSecretaries.length; j++)
+    {
+        document.getElementById(`${currentSecretaries[j]}-secretaries`).remove();
+        alreadySelected.push(currentSecretaries[j]);
+
+        // TEST
+        addImage(getShipObject(currentSecretaries[j]), "nonrotationShips", "nonrotation");
+    }
+    localStorage.setItem("outRotation", JSON.stringify(alreadySelected));
+    currentSecretaries.length = 0;
+
+
+    let ship;
+    for(let i = 0; i < nextSecretariesArr.length; i++)
+    {
+        ship = getShipObject(nextSecretariesArr[i]);
+        let image = `<figure class='${ship.rarity}' id='${ship.name}-secretaries'><img src='${ship.shipyard}' alt='${ship.name}' width='172.8'><figcaption>${ship.name}</figcaption></figure>`;
+        document.getElementById("secretaries").innerHTML += image;
+        currentSecretaries.push(nextSecretariesArr[i]);
+        updateRotation(nextSecretariesArr[i], false); // TEST
+    }
+    localStorage.setItem("secretaries", JSON.stringify(currentSecretaries));
+}
+
+function getNextSecretaries()
+{
+    let numSecretaries = document.getElementById("secretary-amount").value;
+
+    shuffle(selectedShips);
+    if(selectedShips.length <= numSecretaries)
+    {
+        shuffle(alreadySelected);
+        selectedShips = selectedShips.concat(alreadySelected);
+        for(let i = 0; i < alreadySelected.length; i++)
+        {
+            updateRotation(getShipObject(alreadySelected[i]), true);
+            document.getElementById(`${alreadySelected[i]}-nonrotation`).remove()
+        }
+        alreadySelected.length = 0;
+    }
+
+    addSecretaries(selectedShips.splice(0, numSecretaries));
+    localStorage.setItem("rotation", JSON.stringify(selectedShips));
+}
+
+// Shuffle array code from user coolaj86 from
+// https://stackoverflow.com/a/2450976
+function shuffle(array) 
+{
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+}
+
 /**
  * TODO: 
  * [] Clicking icon in rotation may be a bug/feature? Change as see fit.
- * [] Current secretaries shoud be taken from ships in rotation.
- * [] Add array for ships that are out of rotation.
- * [] Make sure ships are taken randomly from selectedShips[].
+ * [X] Current secretaries shoud be taken from ships in rotation.
+ * [X] Add array for ships that are out of rotation.
+ * [X] Make sure ships are taken randomly from selectedShips[].
  * [] Current secretaries should be rotated during weekly reset.
+ * [] Fix bug when unselecting ships no longer in selectedShips[].
+ * [X] Fix how localStorage is used on currentSecretaries[] and alreadySelected[].
+ * [X] Remove ability to click icons in "Up Next" and "Already Chosen".
+ * [] Fix bug where dock incorrectly darkens ships when some ships are in currentSecretaries[] or alreadySelected[].
+ * [X] Add "secretary-amount" to localStorage.
  */
