@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="https://jmonje321.github.io/AzurLaneSecretaries/Images/favicon.ico">
     </head>
     <body onload="timeUntilReset()">
         <h1>Azur Lane Secretary Randomizer</h1>
@@ -23,14 +24,21 @@
             <button id="dock">Choose Ships</button>
             <div id="dock-modal" class="modal">
                 <div class="modal-content">
+                    <h1>Select Ships</h2>
+                    <hr>
                     <div class="test">
-                    <h3>Instructions:</h3>
-                    <ul>
-                        <li>These are ships that haven't been added to the secretary rotation yet.</li>
-                        <li>Click on the ship icons to add them to the rotation.</li>
-                        <li>Grayed out icons means that ship has been added.</li>
+                    <!--<h3>Instructions:</h3>-->
+                    <label for="instructions">Instructions:</label>
+                    <ul id="instructions">
+                        <li>Click on a ship icon to add it to the rotation.</li>
+                        <li>Icons with full color have not been selected.</li>
+                        <li>A grayed out icon means that ship is currently in the rotation.</li>
+                        <li>You may click on a grayed out icon to remove it from the rotation.</li>
+                        <li>To quickly find a specific ship, type a name into the search bar.</li>
                     </ul>
-                    <button id="close-modal">Close</button>
+                    <!--<button id="close-modal">Close</button>-->
+                    <span id="close">&times;</span>
+                    <input type="text" id="shipFilter" placeholder="Seach by name..." onkeyup="filter()">
                     <div id="shipIcons"></div>
                     </div>
                     <!--<input type="image" src="https://azurlane.netojuu.com/w/images/thumb/a/a3/MonarchIcon.png/90px-MonarchIcon.png" alt="Monarch Icon">-->

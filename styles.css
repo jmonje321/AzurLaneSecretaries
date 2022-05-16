@@ -2,13 +2,31 @@ body {
     background-color: lightgray;
     font-family: 'Lora', serif;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
 }
 
 h1,
 h2,
 h3 {
     text-align: center;
+}
+
+#shipFilter {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#close {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 30px;
+    position: fixed;
+    top: 110px;
+    right: 380px;
+}
+
+#close:hover {
+    color: #444444;
+    cursor: pointer;
 }
 
 div.secretaries {
@@ -81,36 +99,31 @@ footer {
     text-align: center;
 }
 
-img.ultra {
-    border-style: solid;
-    border-width: 4px;
-    border-image: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%) 1;  
-    display: inline-block;
-    margin: 5px;
-}
-
-img.super {
-    border-style: solid;
-    border-width: 4px;
-    border-color: #eeee99;
-    display: inline-block;
-    margin: 5px;
-}
-
-img.elite {
-    border-style: solid;
-    border-width: 4px;
-    border-color: #c4adff;
-    display: inline-block;
-    margin: 5px;
-}
-
+img.ultra,
+img.super,
+img.elite,
 img.rare {
     border-style: solid;
     border-width: 4px;
-    border-color: #9fe8ff;
     display: inline-block;
     margin: 5px;
+    cursor: pointer;
+}
+
+img.ultra {
+    border-image: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%) 1;  
+}
+
+img.super {
+    border-color: #eeee99;
+}
+
+img.elite {
+    border-color: #c4adff;
+}
+
+img.rare {
+    border-color: #9fe8ff;
 }
 
 .modal {

@@ -1,6 +1,6 @@
 let modal = document.getElementById("dock-modal");
 let dock = document.getElementById("dock");
-let closeButton = document.getElementById("close-modal");
+let closeButton = document.getElementById("close");
 
 dock.onclick = function() 
 {
@@ -23,6 +23,23 @@ window.addEventListener("click", function(event)
 function setSecretaryNum(object)
 {
     localStorage.setItem("secretaryNum", object.options[object.selectedIndex].value);
+}
+
+function filter()
+{
+    let txtValue;
+    let input = document.getElementById("shipFilter");
+    let filter = input.value.toUpperCase();
+    let div = document.getElementById("shipIcons");
+    let img = div.getElementsByTagName("img");
+    for (let i = 0; i < img.length; i++) {
+        txtValue = img[i].getAttribute('alt');
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            img[i].style.display = "";
+        } else {
+            img[i].style.display = "none";
+        }
+    }
 }
 
 /**
