@@ -10,9 +10,12 @@
         <link rel="icon" href="https://jmonje321.github.io/AzurLaneSecretaries/Images/favicon.ico">
     </head>
     <body onload="timeUntilReset()">
-        <h1>Azur Lane Secretary Randomizer</h1>
-        <hr>
-        <h3>Time Until Weekly Reset: <span id="reset-time"></span></h3>
+        <div class="header">
+            <h1>Azur Lane Secretary Randomizer<img src="https://azurlane.netojuu.com/w/images/7/7f/EssexPartyChibi.png" height="130px"></h1>
+            
+        </div>
+        <!--<hr>-->
+        <h2>Time Until Weekly Reset: <span id="reset-time"></span></h2>
         <div class="options">
             <label for="secretary-amount">How many secretary slots do you have?:</label>
                 <select id="secretary-amount" name="secretary-amount" onchange="setSecretaryNum(this)">
@@ -21,9 +24,11 @@
                     <option value="5">5</option>
                 </select>
             
-            <button id="dock">Choose Ships</button>
+            <br>
+            <div class="buttons"><button id="dock">Choose Ships</button></div>
             <div id="dock-modal" class="modal">
                 <div class="modal-content">
+                    <span id="close">&times;</span>
                     <h1>Select Ships</h2>
                     <hr>
                     <div class="test">
@@ -37,14 +42,14 @@
                         <li>To quickly find a specific ship, type a name into the search bar.</li>
                     </ul>
                     <!--<button id="close-modal">Close</button>-->
-                    <span id="close">&times;</span>
+                    
                     <input type="text" id="shipFilter" placeholder="Seach by name..." onkeyup="filter()">
                     <div id="shipIcons"></div>
                     </div>
                     <!--<input type="image" src="https://azurlane.netojuu.com/w/images/thumb/a/a3/MonarchIcon.png/90px-MonarchIcon.png" alt="Monarch Icon">-->
                 </div>
             </div>
-            <button id="randomize" onclick="getNextSecretaries()">Manually Randomize</button>
+            <div class="buttons"><button class="buttons" id="randomize" onclick="getNextSecretaries()">Manually Randomize</button></div>
         </div>
 
         <h2>Current Secretaries</h2>

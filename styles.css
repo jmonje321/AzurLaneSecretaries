@@ -2,13 +2,39 @@ body {
     background-color: lightgray;
     font-family: 'Lora', serif;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.header{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header img {
+    vertical-align: middle;
+}
+
+h1 {
+    margin-top: 0;
 }
 
 h1,
-h2,
-h3 {
+h2 {
     text-align: center;
 }
+
+.buttons {
+    display: inline-block;
+}
+
+/* Test this once more ship icons are added
+#shipIcons {
+    display: flex;
+    justify-content: center;
+}*/
 
 #shipFilter {
     margin-left: 5px;
@@ -19,9 +45,7 @@ h3 {
     color: lightgray;
     font-weight: bold;
     font-size: 30px;
-    position: fixed;
-    top: 110px;
-    right: 380px;
+    float: right;
 }
 
 #close:hover {
@@ -54,7 +78,8 @@ div.secretaries figure {
     border-width: 4px;
     border-color: #444444;
     display: inline-block;
-    margin-right: 1px;
+    margin-right: 20px;
+    margin-left: 20px;
     /*width: 192px;*/
     width: 172.8px;
     height: 252px;
@@ -81,17 +106,14 @@ figure.ultra {
 }
 
 figure.super {
-    /*border-color: #eeee99;*/
     background: #eeee99;
 }
 
 figure.elite {
-    /*border-color: #c4adff;*/
     background: #c4adff;
 }
 
 figure.rare {
-    /*border-color: #9fe8ff;*/
     background: #9fe8ff;
 }
 
@@ -107,7 +129,6 @@ img.rare {
     border-width: 4px;
     display: inline-block;
     margin: 5px;
-    cursor: pointer;
 }
 
 img.ultra {
@@ -128,7 +149,7 @@ img.rare {
 
 .modal {
     display: none;
-    position: fixed; /* fixed */
+    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
@@ -143,7 +164,7 @@ img.rare {
 .modal-content {
     background: whitesmoke;
     margin: auto;
-    padding: 20px; /* 20px */
+    padding: 20px;
     width: 50%;
 }
 
