@@ -5,11 +5,15 @@ let closeButton = document.getElementById("close");
 dock.onclick = function() 
 {
     modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // ADD THIS LINE
+    document.body.style.height = "100%"; // ADD THIS LINE
 }
 
 closeButton.onclick = function()
 {
     modal.style.display = "none";
+    document.body.style.overflow = "auto"; // ADD THIS LINE
+    document.body.style.height = "auto"; // ADD THIS LINE
 }
 
 window.addEventListener("click", function(event)
@@ -17,6 +21,8 @@ window.addEventListener("click", function(event)
     if(event.target == modal)
     {
         modal.style.display = "none";
+        document.body.style.overflow = "auto"; // ADD THIS LINE
+        document.body.style.height = "auto"; // ADD THIS LINE
     }
 })
 
