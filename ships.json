@@ -1,6 +1,18 @@
 {
     "ships": [
         {
+            "name": "Ägir",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ÄgirIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ÄgirShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Azuma",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AzumaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/AzumaShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
             "name": "Drake",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/DrakeIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/DrakeShipyardIcon.png",
@@ -10,6 +22,66 @@
             "name": "Friedrich der Große",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Friedrich_der_GroßeIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Friedrich_der_GroßeShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Hakuryuu",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HakuryuuIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/HakuryuuShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Kronshtadt",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/KronshtadtIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/KronshtadtShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "New Jersey",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/New JerseyIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/New_JerseyShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Shimakaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ShimakazeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ShimakazeShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Shinano",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ShinanoIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ShinanoShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Ultra Rare Bulin",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Specialized_Bulin_Custom_MKIIIIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Specialized_Bulin_Custom_MKIIIShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Ulrich von Hutten",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Ulrich_von_HuttenIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Ulrich_von_HuttenShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "San Diego Kai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/San_DiegoKaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/San_DiegoKaiShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Warspite Kai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/WarspiteKaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/WarspiteKaiShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
+            "name": "Yuudachi Kai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YuudachiKaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YuudachiKaiShipyardIcon.png",
             "rarity": "ultra"
         },
         {
