@@ -180,7 +180,11 @@ img.rare {
     background: whitesmoke;
     margin: auto;
     padding: 20px;
-    width: 50%;
+    width: 70vw;
+}
+
+.shipIcons {
+    text-align: center;
 }
 
 div.test {
