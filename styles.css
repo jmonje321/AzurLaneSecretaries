@@ -78,8 +78,8 @@ div.secretaries figure {
     border-width: 4px;
     border-color: #444444;
     display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     /*width: 192px;*/
     width: 172.8px;
     height: 252px;
@@ -87,6 +87,8 @@ div.secretaries figure {
 
 div.secretaries figure img {
     vertical-align: middle;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 div.secretaries figcaption {
@@ -136,18 +138,22 @@ img.rare {
 
 img.ultra {
     border-image: linear-gradient(120deg,#8ef 10%,#cfc,#fcf 90%) 1;  
+    background-image: url("https://jmonje321.github.io/AzurLaneSecretaries/Images/bg-ultra.png");
 }
 
 img.super {
     border-color: #eeee99;
+    background-image: url("https://jmonje321.github.io/AzurLaneSecretaries/Images/bg-super.png");
 }
 
 img.elite {
     border-color: #c4adff;
+    background-image: url("https://jmonje321.github.io/AzurLaneSecretaries/Images/bg-elite.png");
 }
 
 img.rare {
     border-color: #9fe8ff;
+    background-image: url("https://jmonje321.github.io/AzurLaneSecretaries/Images/bg-rare.png");
 }
 
 .modal {
