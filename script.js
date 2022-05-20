@@ -268,7 +268,7 @@ function getShipIcons()
  */ 
 function addImage(ship, id, where)
 {
-    let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' alt='${ship.name}' width='90'>`;
+    let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' title='${ship.name}' alt='${ship.name}' width='90'>`;
     document.getElementById(id).innerHTML += image;
     
     if(where === "dock")
