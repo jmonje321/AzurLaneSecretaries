@@ -37,7 +37,11 @@ h2 {
 }*/
 
 #shipFilter {
-    margin-left: 5px;
+    display: block;
+    margin: 0 auto;
+    /*margin-left: 5px;
+    margin-bottom: 5px;*/
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -154,6 +158,18 @@ img.elite {
 img.rare {
     border-color: #9fe8ff;
     background-image: url("https://jmonje321.github.io/AzurLaneSecretaries/Images/bg-rare.png");
+}
+
+#instruction-label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
 }
 
 .modal {
