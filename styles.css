@@ -99,6 +99,7 @@ div.secretaries figcaption {
     color: white;
     background-color: #444444;
     text-align: center;
+    white-space: nowrap;
 }
 
 #rotationShips,
