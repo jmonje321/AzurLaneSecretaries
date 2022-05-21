@@ -232,32 +232,34 @@ function getShipIcons()
 {
     // Adds ships from currentSecretaries[] to Current Secretaries section.
     let ship;
+    const toDarken = [];
     for(let k = 0; k < currentSecretaries.length; k++)
     {
         ship = getShipObject(currentSecretaries[k]);
         let image = `<figure class='${ship.rarity}' id='${ship.name}-secretaries'><img src='${ship.shipyard}' alt='${ship.name}' width='172.8'><figcaption>${ship.name}</figcaption></figure>`;
         document.getElementById("secretaries").innerHTML += image;
-        darkenIcon(ship, "dock"); // TEST
+        toDarken.push(ship);
     }
     // Adds ships from selectedShips[] to rotation ships section.
     for(let j = 0; j < selectedShips.length; j++)
     {
         ship = getShipObject(selectedShips[j]);
         addImage(ship, "rotationShips", "rotation");
-        darkenIcon(ship, "dock");
+        toDarken.push(ship);
     }
     // Adds ships from alreadySelected[] to Already Chosen section.
     for(let x = 0; x < alreadySelected.length; x++)
     {
         ship = getShipObject(alreadySelected[x]);
         addImage(ship, "nonrotationShips", "nonrotation");
-        darkenIcon(ship, "dock");
+        toDarken.push(ship);
     }  
 
     // Adds ships from dockArr[] to dock modal.
     for(let i = 0; i < dockArr.length; i++)
     {
         addImage(dockArr[i], "shipIcons", "dock");
+        if(toDarken.includes(dockArr[i])) darkenIcon(dockArr[i], "dock");
     }
 }
 
