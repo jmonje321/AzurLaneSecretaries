@@ -230,11 +230,6 @@ addToDock();
  */
 function getShipIcons()
 {
-    // Adds ships from dockArr[] to dock modal.
-    for(let i = 0; i < dockArr.length; i++)
-    {
-        addImage(dockArr[i], "shipIcons", "dock");
-    }
     // Adds ships from currentSecretaries[] to Current Secretaries section.
     let ship;
     for(let k = 0; k < currentSecretaries.length; k++)
@@ -258,6 +253,12 @@ function getShipIcons()
         addImage(ship, "nonrotationShips", "nonrotation");
         darkenIcon(ship, "dock");
     }  
+
+    // Adds ships from dockArr[] to dock modal.
+    for(let i = 0; i < dockArr.length; i++)
+    {
+        addImage(dockArr[i], "shipIcons", "dock");
+    }
 }
 
 /**
