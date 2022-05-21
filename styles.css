@@ -87,6 +87,8 @@ div.secretaries figure {
     /*width: 192px;*/
     width: 172.8px;
     height: 252px;
+    animation: fadeIn;
+    animation-duration: 3s;
 }
 
 div.secretaries figure img {
