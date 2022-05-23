@@ -30,12 +30,17 @@ document.addEventListener("readystatechange", (event) =>
 {
     if(document.readyState === "complete")
     {
+        document.getElementById("loader").style.display = "none";
+        timeUntilReset();
+        document.getElementById("content").style.display = "block";
+        /*
         setTimeout(function()
         {
             document.getElementById("loader").style.display = "none";
             timeUntilReset();
             document.getElementById("content").style.display = "block";
         }, 3000)
+        */
     }
 });
 
