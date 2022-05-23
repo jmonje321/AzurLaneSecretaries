@@ -26,6 +26,18 @@ window.addEventListener("click", function(event)
     }
 })
 
+function loadPage()
+{
+    setTimeout(showPage, 1000);
+}
+
+function showPage()
+{
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    timeUntilReset();
+}
+
 function setSecretaryNum(object)
 {
     localStorage.setItem("secretaryNum", object.options[object.selectedIndex].value);
@@ -61,7 +73,8 @@ function clickedShipIcon(shipID)
     let test1 = document.getElementById(`${shipID}-dock`);
     if(test1.hasAttribute("style") && test1.getAttribute("style") === "filter: brightness(0.25);")
     {
-        test1.style.filter = "brightness(1)";
+        //test1.style.filter = "brightness(1)";
+        test1.removeAttribute("style");
         let index = selectedShips.indexOf(shipID);
         let where;
         if(index !== -1)
@@ -271,7 +284,7 @@ function getShipIcons()
  */ 
 function addImage(ship, id, where)
 {
-    let image = `<img class='${ship.rarity}' id='${ship.name}-${where}' src='${ship.icon}' title='${ship.name}' alt='${ship.name}' width='90'>`;
+    let image = `<img class='${where}' id='${ship.name}-${where}' src='${ship.icon}' title='${ship.name}' alt='${ship.name}' width='90' data-rarity='${ship.rarity}'>`;
     document.getElementById(id).innerHTML += image;
     
     if(where === "dock")
