@@ -2017,9 +2017,663 @@
             "rarity": "elite"
         },
         {
+            "name": "Naganami",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NaganamiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NaganamiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Nautilus",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NautilusIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/a/ab/NautilusShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Nelson",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NelsonIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NelsonShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Nicholas",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NicholasIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NicholasShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Nicoloso da Recco",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Nicoloso_da_ReccoIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Nicoloso_da_ReccoShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Niizuki",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NiizukiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NiizukiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ning Hai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Ning_HaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Ning_HaiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Nowaki",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NowakiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NowakiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Nürnberg",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NürnbergIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NürnbergShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Pamiat Merkuria",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Pamiat_MerkuriaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Pamiat_MerkuriaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Penelope",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/PenelopeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/PenelopeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ping Hai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Ping_HaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Ping_HaiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Princeton",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/PrincetonIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/PrincetonShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Queen Elizabeth",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Queen_ElizabethIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Queen_ElizabethShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Quincy",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/QuincyIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/QuincyShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Renown",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/RenownIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/RenownShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Rodney",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/RodneyIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/RodneyShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ryuujou",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/RyuujouIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/5/5e/RyuujouShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Saratoga",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SaratogaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SaratogaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Scharnhorst",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ScharnhorstIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ScharnhorstShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Sheffield",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SheffieldIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SheffieldShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Sheffield µ",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Sheffield_µIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Sheffield_µShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Shigure",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ShigureIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ShigureShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Shirayuki",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ShirayukiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ShirayukiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Soobrazitelny",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SoobrazitelnyIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/8/8f/SoobrazitelnyShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Souryuu",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SouryuuIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SouryuuShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
             "name": "St. Louis",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/St._LouisIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/St._LouisShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Stephen Potter",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Stephen_PotterIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/6/6b/Stephen_PotterShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Stremitelny",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/StremitelnyIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/StremitelnyShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Surcouf",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SurcoufIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SurcoufShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Suzuya",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SuzuyaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SuzuyaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Tai Yuan",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Tai_YuanIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Tai_YuanShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Tartu",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/TartuIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/TartuShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Terror",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/TerrorIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/TerrorShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Thüringen",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ThüringenIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ThüringenShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Torricelli",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/TorricelliIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/TorricelliShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Trieste",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/TriesteIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/TriesteShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-73",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-73Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/U-73ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-110",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-110Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/U-110ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-410",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-410Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/d/d4/U-410ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-522",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-522Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/3/32/U-522ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-556",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-556Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/a/ac/U-556ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-557",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-557Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/3/3f/U-557ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "U-1206",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/U-1206Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/d/da/U-1206ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Umikaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/UmikazeIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/5/58/UmikazeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Unicorn",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/UnicornIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/5/55/UnicornShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Universal Bulin",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Universal_BulinIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Universal_BulinShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Uranami",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/UranamiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/UranamiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Valiant",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ValiantIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ValiantShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Vampire",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/VampireIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/VampireShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Vauquelin",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/VauquelinIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/VauquelinShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Vestal",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/VestalIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/VestalShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Vincennes",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/VincennesIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/VincennesShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Vincenzo Gioberti",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Vincenzo_GiobertiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Vincenzo_GiobertiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Weser",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/WeserIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/WeserShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "West Virginia",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/West_VirginiaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/West_VirginiaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Wichita",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/WichitaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/WichitaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yamakaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YamakazeIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/f/f0/YamakazeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yat Sen",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Yat_SenIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Yat_SenShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ying Swei",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Ying_SweiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Ying_SweiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yoizuki",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YoizukiIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/f/fe/YoizukiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yorck",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YorckIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YorckShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "York",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YorkIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YorkShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yorktown",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YorktownIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YorktownShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yura",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YuraIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YuraShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yuubari",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YuubariIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/e/ed/YuubariShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z1",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z1Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/9/9b/Z1ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z2",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z2Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Z2ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z23",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z23Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Z23ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z24",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z24Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Z24ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z25",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z25Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Z25ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z26",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z26Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/5/53/Z26ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z28",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z28Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/3/33/Z28ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z35",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z35Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Z35ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Z36",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Z36Icon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/c/ca/Z36ShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Zeppy",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ZeppyIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ZeppyShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Acasta",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AcastaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/AcastaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Achilles",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AchillesIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/AchillesShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ajax",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AjaxIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/AjaxShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Amazon",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AmazonIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/AmazonShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ardent",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ArdentIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ArdentShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ariake",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/AriakeIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/0/0f/AriakeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Bailey",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/BaileyIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/1/12/BaileyShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Curacoa",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/CuracoaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/CuracoaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Curlew",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/CurlewIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/CurlewShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Forbin",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ForbinIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ForbinShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Fortune",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/FortuneIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/FortuneShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Fusou",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/FusouIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/FusouShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Hamakaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HamakazeIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/a/aa/HamakazeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Hammann",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HammannIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/HammannShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Hatsuharu",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HatsuharuIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/HatsuharuShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Hatsushimo",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HatsushimoIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/9/91/HatsushimoShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Hyuuga",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/HyuugaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/HyuugaShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Ise",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/IseIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/IseShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Isuzu",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/IsuzuIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/IsuzuShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Kagerou",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/KagerouIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/KagerouShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Kamikaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/KamikazeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/KamikazeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Le Mars",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Le_MarsIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Le_MarsShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Leipzig",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/LeipzigIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/LeipzigShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Long Island",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Long_IslandIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Long_IslandShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Matsukaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/MatsukazeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/MatsukazeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Newcastle",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/NewcastleIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/NewcastleShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Portland",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/PortlandIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/PortlandShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Sendai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SendaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SendaiShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Shouhou",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/ShouhouIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/ShouhouShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Sims",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SimsIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SimsShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Suffolk",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/SuffolkIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/SuffolkShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Tanikaze",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/TanikazeIcon.png",
+            "shipyard": "https://azurlane.netojuu.com/w/images/2/29/TanikazeShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yamashiro",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YamashiroIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YamashiroShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Yuugure",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/YuugureIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/YuugureShipyardIcon.png",
             "rarity": "elite"
         },
         {
