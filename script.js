@@ -26,7 +26,7 @@ window.addEventListener("click", function(event)
     }
 })
 
-document.onreadystatechange = function()
+document.addEventListener("readystatechange", (event) =>
 {
     if(document.readyState === "complete")
     {
@@ -37,7 +37,7 @@ document.onreadystatechange = function()
             document.getElementById("content").style.display = "block";
         }, 3000)
     }
-}
+});
 
 /*
 function loadPage()
