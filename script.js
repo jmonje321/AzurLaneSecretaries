@@ -1,6 +1,7 @@
 let modal = document.getElementById("dock-modal");
 let dock = document.getElementById("dock");
 let closeButton = document.getElementById("close");
+let clearButton = document.getElementById("clear");
 
 dock.onclick = function() 
 {
@@ -14,6 +15,18 @@ closeButton.onclick = function()
     modal.style.display = "none";
     document.body.style.overflow = "auto"; // ADD THIS LINE
     document.body.style.height = "auto"; // ADD THIS LINE
+}
+
+clearButton.onclick = function()
+{
+    let dockShips = document.getElementsByClassName("dock");
+    for(let i = 0; i < dockShips.length; i++)
+    {
+        if(dockShips[i].hasAttribute("style") && dockShips[i].getAttribute("style") === "filter: brightness(0.25);")
+        {
+            clickedShipIcon(dockShips[i].alt);
+        }
+    }
 }
 
 window.addEventListener("click", function(event)
@@ -90,6 +103,9 @@ function filter()
 function clickedShipIcon(shipID)
 {
     console.log(shipID);
+    console.log(selectedShips);
+    console.log(currentSecretaries);
+    console.log(alreadySelected);
     let test1 = document.getElementById(`${shipID}-dock`);
     if(test1.hasAttribute("style") && test1.getAttribute("style") === "filter: brightness(0.25);")
     {
@@ -140,6 +156,11 @@ function clickedShipIcon(shipID)
         } */
     }
     localStorage.setItem("rotation", JSON.stringify(selectedShips));
+    localStorage.setItem("secretaries", JSON.stringify(currentSecretaries));
+    localStorage.setItem("outRotation", JSON.stringify(alreadySelected));
+    console.log(selectedShips);
+    console.log(currentSecretaries);
+    console.log(alreadySelected);
 }
 
 /**
