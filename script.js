@@ -26,6 +26,20 @@ window.addEventListener("click", function(event)
     }
 })
 
+document.onreadystatechange = function()
+{
+    if(document.readyState === "complete")
+    {
+        setTimeout(function()
+        {
+            document.getElementById("loader").style.display = "none";
+            timeUntilReset();
+            document.getElementById("content").style.display = "block";
+        }, 3000)
+    }
+}
+
+/*
 function loadPage()
 {
     setTimeout(showPage, 1000);
@@ -37,6 +51,7 @@ function showPage()
     document.getElementById("content").style.display = "block";
     timeUntilReset();
 }
+*/
 
 function setSecretaryNum(object)
 {
