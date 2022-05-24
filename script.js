@@ -2,12 +2,28 @@ let modal = document.getElementById("dock-modal");
 let dock = document.getElementById("dock");
 let closeButton = document.getElementById("close");
 let clearButton = document.getElementById("clear");
+let firstDockClick = true;
 
 dock.onclick = function() 
 {
     modal.style.display = "block";
     document.body.style.overflow = "hidden"; // ADD THIS LINE
     document.body.style.height = "100%"; // ADD THIS LINE
+
+    if(firstDockClick)
+    {
+        // Adds ships from dockArr[] to dock modal.
+        setTimeout(function()
+        {
+            for(let i = 0; i < dockArr.length; i++)
+            {
+                addImage(dockArr[i], "shipIcons", "dock");
+                if(toDarken.includes(dockArr[i])) darkenIcon(dockArr[i], "dock");
+            }
+            firstDockClick = false;
+            showPage();
+        }, 1000);
+    }
 }
 
 closeButton.onclick = function()
@@ -39,6 +55,7 @@ window.addEventListener("click", function(event)
     }
 })
 
+/*
 document.addEventListener("readystatechange", (event) =>
 {
     if(document.readyState === "complete")
@@ -46,30 +63,30 @@ document.addEventListener("readystatechange", (event) =>
         document.getElementById("loader").style.display = "none";
         timeUntilReset();
         document.getElementById("content").style.display = "block";
-        /*
+        console.log("PAGE LOADED");
+        
         setTimeout(function()
         {
             document.getElementById("loader").style.display = "none";
             timeUntilReset();
             document.getElementById("content").style.display = "block";
         }, 3000)
-        */
+        
     }
 });
-
+*/
 /*
 function loadPage()
 {
     setTimeout(showPage, 1000);
 }
-
+*/
 function showPage()
 {
-    document.getElementById("loader").style.display = "none";
+    document.getElementById("loader-overlay").style.display = "none";
     document.getElementById("content").style.display = "block";
-    timeUntilReset();
 }
-*/
+
 
 function setSecretaryNum(object)
 {
@@ -277,6 +294,7 @@ async function addToDock()
 }
 addToDock();
 
+const toDarken = [];
 /**
  * Function is called only when the page is first opened. Adds the icons
  * of the ships in selectedShips array to the "rotationShips" div id and
@@ -286,7 +304,6 @@ function getShipIcons()
 {
     // Adds ships from currentSecretaries[] to Current Secretaries section.
     let ship;
-    const toDarken = [];
     for(let k = 0; k < currentSecretaries.length; k++)
     {
         ship = getShipObject(currentSecretaries[k]);
@@ -309,12 +326,7 @@ function getShipIcons()
         toDarken.push(ship);
     }  
 
-    // Adds ships from dockArr[] to dock modal.
-    for(let i = 0; i < dockArr.length; i++)
-    {
-        addImage(dockArr[i], "shipIcons", "dock");
-        if(toDarken.includes(dockArr[i])) darkenIcon(dockArr[i], "dock");
-    }
+    console.log("DOCK LOADED");
 }
 
 /**
