@@ -229,7 +229,7 @@ div.test {
 #content {
     display: none;
     animation: fadeIn;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 #loader-overlay {
