@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>AL Secretary Randomizer</title>
+        <title>Azur Lane Secretary Randomizer</title>
         <meta charset="utf-8">
+        <meta name="google-site-verification" content="9Jpgn_IBXZWB2E_mBoXWqLpJaz91qXSji8LfES1GD2Q" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="description" content="Randomly select from a pool of your favorite Azur Lane ships. Can be used to change up your secretary slots once in a while.">
+        <meta name="keywords" content="Azur Lane, Secretary, Randomizer">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -10,13 +15,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="icon" href="https://jmonje321.github.io/AzurLaneSecretaries/Images/favicon.ico">
     </head>
+
     <body onload="timeUntilReset()">
-        <!-- Loader Originally Here -->
             <div class="header">
                 <h1>Azur Lane Secretary Randomizer<img src="https://jmonje321.github.io/AzurLaneSecretaries/Images/header.png" height="130px"></h1>
             </div>
-        <!-- content originally here -->
-            <!--<hr>-->
+
             <h2>Time Until Weekly Reset: <span id="reset-time"></span></h2>
             <div class="options">
                 <label for="secretary-amount">How many secretary slots do you have?:</label>
@@ -38,18 +42,16 @@
                         <h1>Select Ships</h2>
                         <hr>
                         <div class="test">
-                        <!--<h3>Instructions:</h3>-->
                             <label id="instruction-label" for="instructions">Instructions:</label>
                             <ul id="instructions">
                                 <li>Click on a ship icon to add it to the rotation.</li>
-                                <li>Icons with full color have not been selected.</li>
+                                <li>Icons with full color have yet to be selected.</li>
                                 <li>A grayed out icon means that ship is currently in the rotation.</li>
                                 <li>You may click on a grayed out icon to remove it from the rotation.</li>
                                 <li>Ships are grouped by rarity and ordered alphabetically.</li>
                                 <li>To quickly find a specific ship, type a name into the search bar.</li>
+                                <li>Click "Clear All" to remove all ships from rotation.</li>
                             </ul>
-                        <!--<button id="close-modal">Close</button>-->
-                            <!-- Test -->
                             <div id="content">
                                 <div class="filters">
                                     <input type="text" id="shipFilter" placeholder="Seach by name..." onkeyup="filter()">
@@ -58,19 +60,14 @@
                                 <div class="shipIcons" id="shipIcons"></div>
                             </div>
                         </div>
-                        <!--<input type="image" src="https://azurlane.netojuu.com/w/images/thumb/a/a3/MonarchIcon.png/90px-MonarchIcon.png" alt="Monarch Icon">-->
                     </div>
                 </div>
                 <div class="buttons"><button class="buttons" id="randomize" onclick="getNextSecretaries()">Randomize</button></div>
             </div>
-
             <h2>Current Secretaries</h2>
             <hr style="width:25%">
-
             <div class="secretaries" id="secretaries"></div>
-
             <hr style="width:25%">
-
             <div id="container">
                 <h2>Up Next:</h2>
                 <div id="rotationShips"></div>
@@ -79,10 +76,9 @@
             </div>
 
             <footer>
-                <p>If you notice any bugs or have any questions,<br>contact me on Discord at <span style="color:purple">Fenix#1613</span>
+                <p>Notice any bugs or have any questions?<br>Contact me on Discord at <span style="color:purple">Fenix#1613</span>
                 or file an issue on <a href="https://github.com/jmonje321/AzurLaneSecretaries" target="_blank">GitHub</a>.</p>
             </footer>
-        <!-- content originally here -->
         <script src="script.js"></script>
     </body>
 </html>

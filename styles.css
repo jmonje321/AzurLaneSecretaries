@@ -30,12 +30,6 @@ h2 {
     display: inline-block;
 }
 
-/* Test this once more ship icons are added
-#shipIcons {
-    display: flex;
-    justify-content: center;
-}*/
-
 .filters {
     text-align: center;
 }
@@ -46,8 +40,6 @@ h2 {
     width: 200px;
     height: 25px;
     font-size: 15px;
-    /*margin-left: 5px;
-    margin-bottom: 5px;*/
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -96,7 +88,6 @@ div.secretaries figure {
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px;
-    /*width: 192px;*/
     width: 172.8px;
     height: 252px;
     animation: fadeIn;

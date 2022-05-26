@@ -7,8 +7,8 @@ let firstDockClick = true;
 dock.onclick = function() 
 {
     modal.style.display = "block";
-    document.body.style.overflow = "hidden"; // ADD THIS LINE
-    document.body.style.height = "100%"; // ADD THIS LINE
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100%";
 
     if(firstDockClick)
     {
@@ -29,10 +29,12 @@ dock.onclick = function()
 closeButton.onclick = function()
 {
     modal.style.display = "none";
-    document.body.style.overflow = "auto"; // ADD THIS LINE
-    document.body.style.height = "auto"; // ADD THIS LINE
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
 }
 
+// onclick function for "Clear All" button. Removes all 
+// selected ships and resets brightness of icons.
 clearButton.onclick = function()
 {
     let dockShips = document.getElementsByClassName("dock");
@@ -50,49 +52,25 @@ window.addEventListener("click", function(event)
     if(event.target == modal)
     {
         modal.style.display = "none";
-        document.body.style.overflow = "auto"; // ADD THIS LINE
-        document.body.style.height = "auto"; // ADD THIS LINE
+        document.body.style.overflow = "auto";
+        document.body.style.height = "auto";
     }
 })
 
-/*
-document.addEventListener("readystatechange", (event) =>
-{
-    if(document.readyState === "complete")
-    {
-        document.getElementById("loader").style.display = "none";
-        timeUntilReset();
-        document.getElementById("content").style.display = "block";
-        console.log("PAGE LOADED");
-        
-        setTimeout(function()
-        {
-            document.getElementById("loader").style.display = "none";
-            timeUntilReset();
-            document.getElementById("content").style.display = "block";
-        }, 3000)
-        
-    }
-});
-*/
-/*
-function loadPage()
-{
-    setTimeout(showPage, 1000);
-}
-*/
+// Removes loader and shows content of modal. Is called when
+// all ship icons in modal are finished loading.
 function showPage()
 {
     document.getElementById("loader-overlay").style.display = "none";
     document.getElementById("content").style.display = "block";
 }
 
-
 function setSecretaryNum(object)
 {
     localStorage.setItem("secretaryNum", object.options[object.selectedIndex].value);
 }
 
+// Used by search bar in modal to filter ship icons by name.
 function filter()
 {
     let txtValue;
@@ -119,14 +97,9 @@ function filter()
  */
 function clickedShipIcon(shipID)
 {
-    console.log(shipID);
-    console.log(selectedShips);
-    console.log(currentSecretaries);
-    console.log(alreadySelected);
     let test1 = document.getElementById(`${shipID}-dock`);
     if(test1.hasAttribute("style") && test1.getAttribute("style") === "filter: brightness(0.25);")
     {
-        //test1.style.filter = "brightness(1)";
         test1.removeAttribute("style");
         let index = selectedShips.indexOf(shipID);
         let where;
@@ -161,23 +134,10 @@ function clickedShipIcon(shipID)
         test1.style.filter = "brightness(0.25)";
         selectedShips.push(shipID);
         updateRotation(getShipObject(shipID), true);
-
-        /*
-        console.log(selectedShips.length)
-        console.log(parseInt(document.getElementById("secretary-amount").value))
-        // TEST
-        if(selectedShips.length === parseInt(document.getElementById("secretary-amount").value))
-        {
-            console.log("GOT HERE");
-            getNextSecretaries();
-        } */
     }
     localStorage.setItem("rotation", JSON.stringify(selectedShips));
     localStorage.setItem("secretaries", JSON.stringify(currentSecretaries));
     localStorage.setItem("outRotation", JSON.stringify(alreadySelected));
-    console.log(selectedShips);
-    console.log(currentSecretaries);
-    console.log(alreadySelected);
 }
 
 /**
@@ -198,13 +158,6 @@ function timeUntilReset()
     
     document.getElementById("reset-time").innerHTML = hour + ":" + addExtraZero(minutes) + ":" + addExtraZero(seconds);
     setTimeout(timeUntilReset, 1000);
-    /*
-    // For debugging
-    for(let i = 0; i < selectedShips.length; i++)
-    {
-        console.log(selectedShips[i]);
-    }
-    */
 }
 
 /**
@@ -250,7 +203,6 @@ async function fetchJSON() {
 async function addToDock()
 {
     const arr = await fetchJSON();
-    console.log(arr.ships);
 
     for(let i = 0; i < arr.ships.length; i++)
     {
@@ -271,7 +223,6 @@ async function addToDock()
         selectedShips = [];
     }
 
-    // Testing
     if("secretaries" in localStorage)
     {
         currentSecretaries = JSON.parse(localStorage.getItem("secretaries"));
@@ -325,8 +276,6 @@ function getShipIcons()
         addImage(ship, "nonrotationShips", "nonrotation");
         toDarken.push(ship);
     }  
-
-    console.log("DOCK LOADED");
 }
 
 /**
@@ -343,13 +292,7 @@ function addImage(ship, id, where)
     if(where === "dock")
     {
         document.getElementById(`${ship.name}-dock`).setAttribute("onclick", `clickedShipIcon(document.getElementById('${ship.name}-dock').alt);`);
-        /*
-        if(selectedShips.includes(ship.name))
-        {
-            document.getElementById(`${ship.name}-dock`).style.filter = "brightness(0.25)";
-        }*/
     }
-    
 }
 
 /**
@@ -391,6 +334,12 @@ function getShipObject(shipName)
     }
 }
 
+/**
+ * Given the array of ship objects nextSecretariesArr, remove current secretaries
+ * and move them to alreadySelected[]. Then adds new secretaries to currentSecretaries[].
+ * Updates localStorage for outRotation and secretaries.
+ * @param {Object[]} nextSecretariesArr - Ships that will be the new secretaries.
+ */
 function addSecretaries(nextSecretariesArr)
 {
     // Removes old secretaries and puts them in alreadySelected[]
@@ -399,8 +348,7 @@ function addSecretaries(nextSecretariesArr)
         document.getElementById(`${currentSecretaries[j]}-secretaries`).remove();
         alreadySelected.push(currentSecretaries[j]);
 
-        // TEST
-        addImage(getShipObject(currentSecretaries[j]), "nonrotationShips", "nonrotation");
+        addImage(getShipObject(currentSecretaries[j]), "nonrotationShips", "nonrotation"); // Test
     }
     localStorage.setItem("outRotation", JSON.stringify(alreadySelected));
     currentSecretaries.length = 0;
@@ -418,6 +366,11 @@ function addSecretaries(nextSecretariesArr)
     localStorage.setItem("secretaries", JSON.stringify(currentSecretaries));
 }
 
+/**
+ * Shuffles the array of selected ships and splices an amount
+ * equal to the number of secretary slots available. Sends the spliced
+ * array to addSecretaries().
+ */
 function getNextSecretaries()
 {
     let numSecretaries = document.getElementById("secretary-amount").value;
@@ -459,17 +412,3 @@ function shuffle(array)
   
     return array;
 }
-
-/**
- * TODO: 
- * [] Clicking icon in rotation may be a bug/feature? Change as see fit.
- * [X] Current secretaries shoud be taken from ships in rotation.
- * [X] Add array for ships that are out of rotation.
- * [X] Make sure ships are taken randomly from selectedShips[].
- * [] Current secretaries should be rotated during weekly reset.
- * [X] Fix bug when unselecting ships no longer in selectedShips[].
- * [X] Fix how localStorage is used on currentSecretaries[] and alreadySelected[].
- * [X] Remove ability to click icons in "Up Next" and "Already Chosen".
- * [X] Fix bug where dock incorrectly darkens ships when some ships are in currentSecretaries[] or alreadySelected[].
- * [X] Add "secretary-amount" to localStorage.
- */
