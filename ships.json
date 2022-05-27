@@ -73,6 +73,12 @@
             "rarity": "ultra"
         },
         {
+            "name": "Vanguard",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/VanguardIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/VanguardShipyardIcon.png",
+            "rarity": "ultra"
+        },
+        {
             "name": "Warspite Kai",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/WarspiteKaiIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/WarspiteKaiShipyardIcon.png",
@@ -528,6 +534,12 @@
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/IndependenceKaiShipyardIcon.png",
             "rarity": "super"
         },
+        {
+            "name": "Indomitable",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/IndomitableIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/IndomitableShipyardIcon.png",
+            "rarity": "super"
+        },
 		{
 			"name": "Ingraham",
 			"icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/IngrahamIcon.png",
@@ -570,6 +582,12 @@
 			"shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Jeanne_dArcShipyardIcon.png",
 			"rarity": "super"
 		},
+        {
+            "name": "Jervis",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/JervisIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/JervisShipyardIcon.png",
+            "rarity": "super"
+        },
         {
             "name": "Jintsuu Kai",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/JintsuuKaiIcon.png",
@@ -1171,6 +1189,12 @@
             "rarity": "super"
         },
         {
+            "name": "Unicorn Kai",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/UnicornKaiIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/UnicornKaiShipyardIcon.png",
+            "rarity": "super"
+        },
+        {
             "name": "Victorious",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/VictoriousIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/VictoriousShipyardIcon.png",
@@ -1438,6 +1462,12 @@
             "name": "Béarn",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/BéarnIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/BéarnShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Bellona",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/BellonaIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/BellonaShipyardIcon.png",
             "rarity": "elite"
         },
         {
@@ -2077,6 +2107,12 @@
             "rarity": "elite"
         },
         {
+            "name": "Little Cheshire",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Little_CheshireIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Little_CheshireShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
             "name": "Little Enterprise",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Little_EnterpriseIcon.png",
             "shipyard": "https://azurlane.netojuu.com/w/images/9/93/Little_EnterpriseShipyardIcon.png",
@@ -2380,6 +2416,12 @@
             "name": "Renown",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/RenownIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/RenownShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Revenge",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/RevengeIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/RevengeShipyardIcon.png",
             "rarity": "elite"
         },
         {
