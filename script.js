@@ -133,7 +133,16 @@ function clickedShipIcon(shipID)
     {
         test1.style.filter = "brightness(0.25)";
         selectedShips.push(shipID);
-        updateRotation(getShipObject(shipID), true);
+        let ship = getShipObject(shipID);
+        updateRotation(ship, true);
+
+        if(!images.has(shipID))
+        {
+            let image = new Image(173);
+            image.src = ship.shipyard;
+            image.alt = ship.name;
+            images.set(ship.name, image);
+        }
     }
     localStorage.setItem("rotation", JSON.stringify(selectedShips));
     localStorage.setItem("secretaries", JSON.stringify(currentSecretaries));
@@ -261,6 +270,12 @@ function getShipIcons()
         let image = `<figure class='${ship.rarity}' id='${ship.name}-secretaries'><img src='${ship.shipyard}' alt='${ship.name}' width='172.8'><figcaption>${ship.name}</figcaption></figure>`;
         document.getElementById("secretaries").innerHTML += image;
         toDarken.push(ship);
+
+        // adds ship to preload images map
+        let imageObj = new Image(173);
+        imageObj.src = ship.shipyard;
+        imageObj.alt = ship.name;
+        images.set(ship.name, imageObj);
     }
     // Adds ships from selectedShips[] to rotation ships section.
     for(let j = 0; j < selectedShips.length; j++)
@@ -275,7 +290,37 @@ function getShipIcons()
         ship = getShipObject(alreadySelected[x]);
         addImage(ship, "nonrotationShips", "nonrotation");
         toDarken.push(ship);
-    }  
+    }
+    preloadSecretaries();
+}
+
+let images = new Map();
+// Preloads the shipyard icon of all the ships in selectedShips[] and alreadySelected[]
+function preloadSecretaries()
+{
+    for(let i = 0; i < selectedShips.length; i++)
+    {
+        if(!images.has(selectedShips[i]))
+        {
+            let ship = getShipObject(selectedShips[i]);
+            let image = new Image(173);
+            image.src = ship.shipyard;
+            image.alt = ship.name;
+            images.set(ship.name, image);
+        }
+    }
+
+    for(let x = 0; x < alreadySelected.length; x++)
+    {
+        if(!images.has(alreadySelected[x]))
+        {
+            let ship = getShipObject(alreadySelected[x]);
+            let image = new Image(173);
+            image.src = ship.shipyard;
+            image.alt = ship.name;
+            images.set(ship.name, image);
+        }
+    }
 }
 
 /**
@@ -286,7 +331,7 @@ function getShipIcons()
  */ 
 function addImage(ship, id, where)
 {
-    let image = `<img class='${where}' id='${ship.name}-${where}' src='${ship.icon}' title='${ship.name}' alt='${ship.name}' width='90' data-rarity='${ship.rarity}'>`;
+    let image = `<img class='${where}' id='${ship.name}-${where}' src='${ship.icon}' title='${ship.name}' alt='${ship.name}' width='90' data-rarity='${ship.rarity}' draggable='false'>`;
     document.getElementById(id).innerHTML += image;
     
     if(where === "dock")
@@ -358,8 +403,16 @@ function addSecretaries(nextSecretariesArr)
     for(let i = 0; i < nextSecretariesArr.length; i++)
     {
         ship = getShipObject(nextSecretariesArr[i]);
-        let image = `<figure class='${ship.rarity}' id='${ship.name}-secretaries'><img src='${ship.shipyard}' alt='${ship.name}' width='172.8'><figcaption>${ship.name}</figcaption></figure>`;
-        document.getElementById("secretaries").innerHTML += image;
+
+        let figureElement = document.createElement("figure");
+        figureElement.setAttribute("class", ship.rarity);
+        figureElement.setAttribute("id", `${ship.name}-secretaries`);
+        let captionElement = document.createElement("figcaption");
+        captionElement.innerText = ship.name;
+        figureElement.appendChild(images.get(ship.name));
+        figureElement.appendChild(captionElement);
+        document.getElementById("secretaries").appendChild(figureElement);
+
         currentSecretaries.push(nextSecretariesArr[i]);
         updateRotation(nextSecretariesArr[i], false, "rotation"); // TEST
     }
