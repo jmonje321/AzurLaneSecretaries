@@ -594,6 +594,12 @@
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/JintsuuKaiShipyardIcon.png",
             "rarity": "super"
         },
+        {
+            "name": "Joffre",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/JoffreIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/JoffreShipyardIcon.png",
+            "rarity": "super"
+        },
 		{
 			"name": "Kaga",
 			"icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/KagaIcon.png",
@@ -676,6 +682,12 @@
             "name": "Kuon",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/KuonIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/KuonShipyardIcon.png",
+            "rarity": "super"
+        },
+        {
+            "name": "L'Indomptable",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/LIndomptableIcon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/LIndomptableShipyardIcon.png",
             "rarity": "super"
         },
         {
@@ -1660,6 +1672,12 @@
             "name": "Émile Bertin",
             "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Émile_BertinIcon.png",
             "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Émile_BertinShipyardIcon.png",
+            "rarity": "elite"
+        },
+        {
+            "name": "Enterprise (Royal Navy)",
+            "icon": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Icons/Enterprise_(Royal_Navy)Icon.png",
+            "shipyard": "https://jmonje321.github.io/AzurLaneSecretaries/Images/Shipyard Icons/Enterprise_(Royal_Navy)ShipyardIcon.png",
             "rarity": "elite"
         },
         {
