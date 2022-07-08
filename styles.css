@@ -176,7 +176,7 @@ img[data-rarity="rare"] {
 }
 
 img[data-rarity="normal"] {
-    border-color: lightgray;
+    border-color: rgb(151, 151, 151);
     background-image: url("https://jmonje321.github.io/AzurLaneSecretaries/Images/bg-common.png");
 }
 

@@ -2,6 +2,7 @@ let modal = document.getElementById("dock-modal");
 let dock = document.getElementById("dock");
 let closeButton = document.getElementById("close");
 let clearButton = document.getElementById("clear");
+let selectAllButton = document.getElementById("selectAll");
 let firstDockClick = true;
 
 dock.onclick = function() 
@@ -45,6 +46,24 @@ clearButton.onclick = function()
             clickedShipIcon(dockShips[i].alt);
         }
     }
+}
+
+selectAllButton.onclick = function()
+{
+    document.getElementById("loader-overlay").style.display = "block";
+    
+    setTimeout(function()
+    {
+        let dockShips = document.getElementsByClassName("dock");
+        for(let i = 0; i < dockShips.length; i++)
+        {
+            if(!dockShips[i].hasAttribute("style"))
+            {
+                clickedShipIcon(dockShips[i].alt);
+            }
+        }
+        document.getElementById("loader-overlay").style.display = "none";
+    }, 1000); 
 }
 
 window.addEventListener("click", function(event)
